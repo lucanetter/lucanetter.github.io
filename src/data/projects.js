@@ -1,6 +1,61 @@
-export const projectTagOptions = ['CAD', 'Statics', 'Simulation', 'Python', 'MATLAB', 'Data', 'Finance'];
+export const projectTagOptions = ['CAD', 'Statics', 'Simulation', 'Python', 'MATLAB', 'Data', 'Finance', 'C++', 'Software', 'Qt'];
 
 export const projects = [
+  {
+    slug: 'swvcs',
+    title: 'SolidWorks Version Control System',
+    subtitle: 'Standalone version control tool for SolidWorks CAD files with snapshot and revert capabilities.',
+    date: '2026-02-19',
+    tags: ['CAD', 'C++', 'Software', 'Qt'],
+    featured: true,
+    thumbnail: null,
+    sections: {
+      overview: {
+        problem:
+          'Traditional version control systems like Git cannot effectively handle binary SolidWorks files (.SLDPRT, .SLDASM, .SLDDRW), making it difficult to track design iterations and revert to previous versions.',
+        goal: 'Create a lightweight, standalone application that enables engineers to capture snapshots of SolidWorks files and restore previous versions without requiring Git or plugins.'
+      },
+      approach: {
+        steps: [
+          'Designed SQLite-based storage architecture with SHA-256 hashing for file deduplication.',
+          'Integrated SolidWorks COM API to extract metadata (mass, volume, surface area, feature counts).',
+          'Built dual interface: command-line tool for automation and Qt GUI for interactive use.',
+          'Implemented snapshot system storing complete file copies with commit metadata and thumbnails.'
+        ],
+        assumptions: [
+          'SolidWorks binary files are not diffable, so full file copies are stored.',
+          'Storage is cheap enough to justify complete file snapshots over delta compression.',
+          'Single-file workflow is sufficient for initial version (no multi-file assemblies).'
+        ]
+      },
+      technicalBreakdown: {
+        bullets: [
+          'C++ backend (87.7%) with MinGW-w64 compiler and CMake build system.',
+          'Qt 6.x framework for cross-platform GUI with modern interface.',
+          'SQLite database stores commits, metadata, and handles file deduplication.',
+          'BMP thumbnail generation (256×256) for visual commit history.',
+          'SHA-256 hashing ensures data integrity and prevents duplicate storage.',
+          'SolidWorks COM API integration for automated metadata extraction.'
+        ],
+        formulas: []
+      },
+      results: {
+        summary: 'Delivered a fully functional version control system purpose-built for SolidWorks with commit history, metadata tracking, and instant file restoration.',
+        metrics: [
+          { label: 'Primary Language', value: 'C++' },
+          { label: 'GUI Framework', value: 'Qt 6.x' },
+          { label: 'File Deduplication', value: 'SHA-256' }
+        ],
+        plots: []
+      },
+      tools: ['C++', 'Qt', 'CMake', 'SQLite', 'SolidWorks API', 'MinGW-w64']
+    },
+    links: {
+      github: 'https://github.com/lucanetter/swvcs',
+      report: null,
+      video: null
+    }
+  },
   {
     slug: 'adaptive-suspension-upright',
     title: 'Adaptive Suspension Upright Optimization',
