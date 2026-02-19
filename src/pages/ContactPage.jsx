@@ -66,7 +66,7 @@ export default function ContactPage() {
 
   const copyEmail = async () => {
     try {
-      await navigator.clipboard.writeText('luca.netter@example.com');
+      await navigator.clipboard.writeText('lun228@lehigh.edu');
       setToast({ show: true, message: 'Email copied to clipboard.', type: 'success' });
     } catch (error) {
       setToast({ show: true, message: 'Could not copy email in this browser.', type: 'error' });
@@ -91,7 +91,7 @@ export default function ContactPage() {
             <p className="mt-2 text-sm font-medium text-slate-700 dark:text-slate-200">luca.netter@example.com</p>
           </a>
           <a
-            href="https://linkedin.com"
+            href="https://www.linkedin.com/in/luca-netter-227b11258"
             target="_blank"
             rel="noreferrer"
             className="rounded-2xl border border-slate-200 bg-white p-5 shadow-soft transition hover:-translate-y-1 dark:border-slate-800 dark:bg-slate-900"
@@ -100,7 +100,7 @@ export default function ContactPage() {
             <p className="mt-2 text-sm font-medium text-slate-700 dark:text-slate-200">linkedin.com</p>
           </a>
           <a
-            href="https://github.com"
+            href="https://github.com/lucanetter"
             target="_blank"
             rel="noreferrer"
             className="rounded-2xl border border-slate-200 bg-white p-5 shadow-soft transition hover:-translate-y-1 dark:border-slate-800 dark:bg-slate-900"
