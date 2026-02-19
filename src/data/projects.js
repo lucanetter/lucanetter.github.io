@@ -63,7 +63,8 @@ export const projects = [
     date: '2024-12-15',
     tags: ['Python', 'Data', 'Software'],
     featured: true,
-    thumbnail: null,
+    thumbnail: '/images/vehicle_dynamics_1.png',
+    images: ['/images/vehicle_dynamics_1.png', '/images/vehicle_dynamics_2.png'],
     sections: {
       overview: {
         problem:
@@ -107,7 +108,7 @@ export const projects = [
     },
     links: {
       github: 'https://github.com/lucanetter/engr10final',
-      report: null,
+      report: '/files/ENGR 10 Final Project.pdf',
       video: null
     }
   }
