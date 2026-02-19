@@ -8,7 +8,8 @@ export const projects = [
     date: '2026-02-19',
     tags: ['CAD', 'C++', 'Software', 'Qt'],
     featured: true,
-    thumbnail: null,
+    thumbnail: '/images/swvcs_gui1.png',
+    images: ['/images/swvcs_gui1.png'],
     sections: {
       overview: {
         problem:
