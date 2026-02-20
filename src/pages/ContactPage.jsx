@@ -84,11 +84,11 @@ export default function ContactPage() {
 
         <div className="mb-8 grid gap-4 md:grid-cols-3">
           <a
-            href="mailto:luca.netter@example.com"
+            href="mailto:lun228@lehigh.edu"
             className="rounded-2xl border border-slate-200 bg-white p-5 shadow-soft transition hover:-translate-y-1 dark:border-slate-800 dark:bg-slate-900"
           >
             <h3 className="text-sm font-semibold uppercase tracking-wider text-slate-500 dark:text-slate-400">Email</h3>
-            <p className="mt-2 text-sm font-medium text-slate-700 dark:text-slate-200">luca.netter@example.com</p>
+            <p className="mt-2 text-sm font-medium text-slate-700 dark:text-slate-200">lun228@lehigh.edu</p>
           </a>
           <a
             href="https://www.linkedin.com/in/luca-netter-227b11258"
@@ -97,7 +97,7 @@ export default function ContactPage() {
             className="rounded-2xl border border-slate-200 bg-white p-5 shadow-soft transition hover:-translate-y-1 dark:border-slate-800 dark:bg-slate-900"
           >
             <h3 className="text-sm font-semibold uppercase tracking-wider text-slate-500 dark:text-slate-400">LinkedIn</h3>
-            <p className="mt-2 text-sm font-medium text-slate-700 dark:text-slate-200">linkedin.com</p>
+            <p className="mt-2 text-sm font-medium text-slate-700 dark:text-slate-200">luca-netter-227b11258</p>
           </a>
           <a
             href="https://github.com/lucanetter"
@@ -106,7 +106,7 @@ export default function ContactPage() {
             className="rounded-2xl border border-slate-200 bg-white p-5 shadow-soft transition hover:-translate-y-1 dark:border-slate-800 dark:bg-slate-900"
           >
             <h3 className="text-sm font-semibold uppercase tracking-wider text-slate-500 dark:text-slate-400">GitHub</h3>
-            <p className="mt-2 text-sm font-medium text-slate-700 dark:text-slate-200">github.com</p>
+            <p className="mt-2 text-sm font-medium text-slate-700 dark:text-slate-200">github.com/lucanetter</p>
           </a>
         </div>
 
